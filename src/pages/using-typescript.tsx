@@ -1,9 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { PageProps, Link, graphql, HeadFC } from "gatsby"
-
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { PageProps, Link, graphql } from "gatsby"
 
 type DataProps = {
   site: {
@@ -15,7 +12,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   data,
   location,
 }) => (
-  <Layout>
+  <main>
     <h1>
       Gatsby supports <b>TypeScript by default</b>
     </h1>
@@ -40,10 +37,8 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
       .
     </p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </main>
 )
-
-export const Head: HeadFC<DataProps> = () => <Seo title="Using TypeScript" />
 
 export default UsingTypescript
 
