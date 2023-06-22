@@ -50,12 +50,12 @@ const MapCards = () => {
     const img2d = getImage(data.file.edges.find(value => value.node.name === '2d').node)
 
     return <div className='flex flex-wrap justify-center mb-24'>
-        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 bg-blue-gray-700 cursor-pointer" onClick={handleOpen}>
-            <CardHeader floated={false} className="h-80">
+        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 cursor-pointer" onClick={handleOpen}>
+            <CardHeader floated={false} className="h-56">
                 <GatsbyImage image={img2d} layout="fixed" />
             </CardHeader>
             <CardBody className="text-center">
-                <Typography variant="h4" color="white" className="mb-1">
+                <Typography variant="h4" className="mb-2">
                 2D
                 </Typography>
             </CardBody>
@@ -79,12 +79,12 @@ const MapCards = () => {
                 </Button>
             </DialogFooter>
         </Dialog>
-        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 bg-blue-gray-700 cursor-pointer" onClick={handleOpen1}>
-            <CardHeader floated={false} className="h-80">
+        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 cursor-pointer" onClick={handleOpen1}>
+            <CardHeader floated={false} className="h-56">
                 <GatsbyImage image={img25d} layout="fixed" />
             </CardHeader>
             <CardBody className="text-center">
-                <Typography variant="h4" color="white" className="mb-1">
+                <Typography variant="h4" className="mb-2">
                 2.5D
                 </Typography>
             </CardBody>
@@ -108,12 +108,12 @@ const MapCards = () => {
                 </Button>
             </DialogFooter>
         </Dialog>
-        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 bg-blue-gray-700 cursor-pointer" onClick={handleOpen2}>
-            <CardHeader floated={false} className="h-80">
+        <Card className="mt-4 mb-10 ml-2 mr-2 w-96 cursor-pointer" onClick={handleOpen2}>
+            <CardHeader floated={false} className="h-56">
                 <GatsbyImage image={img3d} layout="fixed" />
             </CardHeader>
             <CardBody className="text-center">
-                <Typography variant="h4" color="white" className="mb-1">
+                <Typography variant="h4" className="mb-2">
                 3D
                 </Typography>
             </CardBody>

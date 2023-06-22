@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #f9fafc;
 }
 body {
   font-family: "Noto Sans KR";

@@ -41,20 +41,6 @@ const Data = [
       img: "npc",
       size: "sm",
     },
-    {
-      id: 7,
-      name: "인터랙션 - 엔티티",
-      text: "test2",
-      img: "npc",
-      size: "sm",
-    },
-    {
-      id: 8,
-      name: "인터랙션 - 엔티티",
-      text: "test2",
-      img: "npc",
-      size: "sm",
-    },
   ]
 
 export default Data 
