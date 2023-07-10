@@ -1,10 +1,7 @@
 import React from "react"
 import { Typography } from "@material-tailwind/react"
-// import loadable from '@loadable/component'
 
 const MapMain = React.lazy(() => import("./MapMain"))
-
-// const MapMain = loadable(() => import('./MapMain'))
 
 const MapFirstScreen = () => {
   const isSSR = typeof window === "undefined"

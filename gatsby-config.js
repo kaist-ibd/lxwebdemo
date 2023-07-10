@@ -8,9 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  flags: {
-    DEV_SSR: true
-  },
+  // flags: {
+  //   DEV_SSR: true
+  // },
   siteMetadata: {
     title: `IBD x LX Daejeon Metaverse`,
     description: `Daejeon Metaverse`,

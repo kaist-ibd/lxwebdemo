@@ -1,9 +1,7 @@
 import React from "react"
 import { Typography } from "@material-tailwind/react"
-// import loadable from '@loadable/component'
 
 const MapDT = React.lazy(() => import("./MapDT"))
-// const MapDT = loadable(() => import('./MapDT'))
 
 const MapSecondScreen = () => {
   const isSSR = typeof window === "undefined"
@@ -33,7 +31,7 @@ const MapSecondScreen = () => {
           </Typography>
         </div>
         <div className="absolute top-1/2 left-1/2 transform translate-x-1/2 -translate-y-[100%] flex justify-center z-[1001]">
-          <img src="https://i.ibb.co/JCYvLw2/pngwing-com.png" width={"50%"} />
+          <img src="https://i.ibb.co/JCYvLw2/pngwing-com.png" width={"50%"} alt="minecraft" />
         </div>
       </div>
     </div>

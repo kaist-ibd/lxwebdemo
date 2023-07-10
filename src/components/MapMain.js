@@ -23,37 +23,38 @@ const MapMain = () => {
             <img
               src="https://images.squarespace-cdn.com/content/v1/54027144e4b0897ca33a9713/1602218481630-WN0CHJ393P9UJ2N4PIGZ/kaist_logo.png"
               className="h-6"
+              alt="logo-kaist"
             />
           </div>
         </Marker>
         <Marker position={[35.83254, 127.02072]}>
           <div className="rounded-xl border-4 py-1 px-3 bg-white -mt-10 -ml-5">
-            <img src="https://lxsiri.re.kr/images/site/frt/logo/h1.gif" />
+            <img src="https://lxsiri.re.kr/images/site/frt/logo/h1.gif" alt="logo-lx" />
           </div>
         </Marker>
         <Marker position={[36.37655, 127.38806]}>
-          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit">
+          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit whitespace-nowrap">
             <Typography variant="h6" color="blue-gray">
               한빛탑 일대
             </Typography>
           </div>
         </Marker>
         <Marker position={[36.35051, 127.38498]}>
-          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit">
+          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit whitespace-nowrap">
             <Typography variant="h6" color="blue-gray">
               대전시청
             </Typography>
           </div>
         </Marker>
         <Marker position={[36.32839, 127.42824]}>
-          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit">
+          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit whitespace-nowrap">
             <Typography variant="h6" color="blue-gray">
               으능정이 거리
             </Typography>
           </div>
         </Marker>
         <Marker position={[36.33216, 127.4516]}>
-          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit">
+          <div className="rounded-xl border-4 py-1 px-3 bg-white w-fit whitespace-nowrap">
             <Typography variant="h6" color="blue-gray">
               대동벽화마을
             </Typography>

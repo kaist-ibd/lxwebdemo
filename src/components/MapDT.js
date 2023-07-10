@@ -24,7 +24,7 @@ const MapDT = () => {
       <MarkerLayer>
         <Marker position={[35.83254, 127.02072]}>
           <div className="rounded-xl border-4 py-1 px-3 bg-white -mt-10 -ml-5">
-            <img src="https://lxsiri.re.kr/images/site/frt/logo/h1.gif" />
+            <img src="https://lxsiri.re.kr/images/site/frt/logo/h1.gif" alt="logo" />
           </div>
         </Marker>
         <Marker position={[36.37655, 127.38806]}>
@@ -32,7 +32,7 @@ const MapDT = () => {
             <PopoverHandler>
               <Button
                 variant="gradient"
-                className="flex items-center gap-2 rounded-3xl"
+                className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
               >
                 <p className="text-lg">한빛탑 일대</p>
                 <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
@@ -52,7 +52,7 @@ const MapDT = () => {
               <Button
                 variant="gradient"
                 color="green"
-                className="flex items-center gap-2 rounded-3xl"
+                className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
               >
                 <p class="text-lg">대전시청</p>
                 <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
@@ -72,7 +72,7 @@ const MapDT = () => {
               <Button
                 variant="gradient"
                 color="red"
-                className="flex items-center gap-2 rounded-3xl"
+                className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
               >
                 <p class="text-lg">으능정이 거리</p>
                 <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
@@ -92,7 +92,7 @@ const MapDT = () => {
               <Button
                 variant="gradient"
                 color="yellow"
-                className="flex items-center gap-2 rounded-3xl"
+                className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
               >
                 <p class="text-lg">대동벽화마을</p>
                 <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
