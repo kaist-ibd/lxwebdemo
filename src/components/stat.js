@@ -12,12 +12,9 @@ import {
   DialogFooter,
 } from "@material-tailwind/react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Site from "./cards/site"
 import Paint from "./cards/paint"
-import Quiz from "./cards/quiz"
-import Npc from "./cards/npc"
 
-const CustomStatCard = ({ text, name, image, slug, size }) => {
+const CustomStatCard = ({ text, name, image, size }) => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(!open)
 
@@ -53,14 +50,8 @@ const CustomStatCard = ({ text, name, image, slug, size }) => {
       >
         <DialogHeader>{name}</DialogHeader>
         <DialogBody divider className="h-[40rem] overflow-scroll">
-          {image === "site" ? (
-            <Site />
-          ) : image === "paint" ? (
+          {image === "paint" ? (
             <Paint />
-          ) : image === "quiz" ? (
-            <Quiz />
-          ) : image === "npc" ? (
-            <Npc />
           ) : null}
         </DialogBody>
         <DialogFooter>
