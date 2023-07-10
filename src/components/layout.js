@@ -2,8 +2,10 @@ import React from "react"
 
 import { SectionsContainer, Section } from "react-fullpage"
 
-import LeafletMain from "./leafletMain"
-import LeafletDT from "./leafletDT"
+// import LeafletMain from "./leafletMain"
+// import LeafletDT from "./leafletDT"
+import MapSecondScreen from "./MapSecondScreen"
+import MapFirstScreen from "./MapFirstScreen"
 import MainCarousel from "./mainCarousel"
 import OverallStats from "./overallStats"
 import McMap from "./mcMap"
@@ -26,10 +28,10 @@ const Layout = () => {
     <>
       <SectionsContainer {...options}>
         <Section>
-          <LeafletMain />
+          <MapFirstScreen />
         </Section>
         <Section>
-          <LeafletDT />
+          <MapSecondScreen />
         </Section>
         <Section>
           <MainCarousel />

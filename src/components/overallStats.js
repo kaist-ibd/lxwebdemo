@@ -59,7 +59,7 @@ const OverallStats = () => {
                 </ListItem>
               </PopoverHandler>
               <PopoverContent>
-                인당 평균 접속 시간: 1시간 7분 27초
+                인당 평균 접속 시간: 1시간 8분 55초
               </PopoverContent>
             </Popover>
             <Popover
