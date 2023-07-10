@@ -2,7 +2,7 @@ import React from "react"
 import { Typography } from "@material-tailwind/react"
 // import loadable from '@loadable/component'
 
-const MapDT = React.lazy(() => import("./quizStats"))
+const MapDT = React.lazy(() => import("./MapDT"))
 // const MapDT = loadable(() => import('./MapDT'))
 
 const MapSecondScreen = () => {

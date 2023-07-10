@@ -41,7 +41,7 @@ const MapDT = () => {
             <PopoverContent className="w-[800px] bg-transparent border-0">
               <StaticImage
                 className="h-full w-full rounded-3xl"
-                src="../../images/s1.png"
+                src="../images/s1.png"
               />
             </PopoverContent>
           </Popover>
@@ -61,7 +61,7 @@ const MapDT = () => {
             <PopoverContent className="w-[800px] bg-transparent border-0">
               <StaticImage
                 className="h-full w-full rounded-3xl"
-                src="../../images/s2.png"
+                src="../images/s2.png"
               />
             </PopoverContent>
           </Popover>
@@ -81,7 +81,7 @@ const MapDT = () => {
             <PopoverContent className="w-[800px] bg-transparent border-0">
               <StaticImage
                 className="h-full w-full rounded-3xl"
-                src="../../images/s3.png"
+                src="../images/s3.png"
               />
             </PopoverContent>
           </Popover>
@@ -101,7 +101,7 @@ const MapDT = () => {
             <PopoverContent className="w-[800px] bg-transparent border-0">
               <StaticImage
                 className="h-full w-full rounded-3xl"
-                src="../../images/s4.png"
+                src="../images/s4.png"
               />
             </PopoverContent>
           </Popover>
