@@ -12,9 +12,7 @@ import {
   DialogFooter,
 } from "@material-tailwind/react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Overall from "./cards/overall"
 import Site from "./cards/site"
-import Cart from "./cards/cart"
 import Paint from "./cards/paint"
 import Quiz from "./cards/quiz"
 import Npc from "./cards/npc"
@@ -55,12 +53,8 @@ const CustomStatCard = ({ text, name, image, slug, size }) => {
       >
         <DialogHeader>{name}</DialogHeader>
         <DialogBody divider className="h-[40rem] overflow-scroll">
-          {image === "hanbit" ? (
-            <Overall />
-          ) : image === "site" ? (
+          {image === "site" ? (
             <Site />
-          ) : image === "cart" ? (
-            <Cart />
           ) : image === "paint" ? (
             <Paint />
           ) : image === "quiz" ? (
@@ -70,8 +64,8 @@ const CustomStatCard = ({ text, name, image, slug, size }) => {
           ) : null}
         </DialogBody>
         <DialogFooter>
-          <Button variant="gradient" onClick={handleOpen}>
-            <span>종료</span>
+          <Button variant="outlined" color="gray" onClick={handleOpen}>
+            <span className="text-gray-800 text-sm">종료</span>
           </Button>
         </DialogFooter>
       </Dialog>

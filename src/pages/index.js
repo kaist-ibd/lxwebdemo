@@ -1,15 +1,16 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
 
-import StatsCards from "../components/statsCards";
-import Data from "../components/data";
+import Layout from "../components/layout";
+
+import "leaflet/dist/leaflet.css";
 
 const IndexPage = () => (
   <main>
     <Helmet>
       <title>IBD-LX Demo</title>
     </Helmet>
-    <StatsCards stats={Data} />
+    <Layout />
   </main>
 )
 
