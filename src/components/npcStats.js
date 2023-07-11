@@ -10,29 +10,6 @@ import {
 import { ResponsivePie } from "@nivo/pie"
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline"
 
-const data = [
-  {
-    id: "한빛탑 일대",
-    label: "한빛탑 일대",
-    value: 0.376,
-  },
-  {
-    id: "대전시청",
-    label: "대전시청",
-    value: 0.213,
-  },
-  {
-    id: "으능정이 거리",
-    label: "으능정이 거리",
-    value: 0.197,
-  },
-  {
-    id: "대동벽화마을",
-    label: "대동벽화마을",
-    value: 0.214,
-  },
-]
-
 const NPCStats = () => {
   const [active, setActive] = React.useState(1)
   const getItemProps = index => ({
@@ -69,33 +46,9 @@ const NPCStats = () => {
               color="blue-gray"
               className="mb-4 mt-2 flex justify-center"
             >
-              참여자가 머문 구역
+              제작중
             </Typography>
             <div className="h-[240px]">
-              <ResponsivePie
-                data={data}
-                margin={{ top: 20, right: 60, bottom: 40, left: 60 }}
-                valueFormat=" >-.1%"
-                innerRadius={0.5}
-                padAngle={0.7}
-                cornerRadius={3}
-                activeOuterRadiusOffset={8}
-                colors={{ scheme: "pastel1" }}
-                borderWidth={1}
-                borderColor={{
-                  from: "color",
-                  modifiers: [["darker", 0.2]],
-                }}
-                arcLinkLabelsSkipAngle={10}
-                arcLinkLabelsTextColor="#333333"
-                arcLinkLabelsThickness={2}
-                arcLinkLabelsColor={{ from: "color" }}
-                arcLabelsSkipAngle={10}
-                arcLabelsTextColor={{
-                  from: "color",
-                  modifiers: [["darker", 2]],
-                }}
-              />
             </div>
           </CardBody>
         </Card>
