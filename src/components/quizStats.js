@@ -93,6 +93,78 @@ const data_2 = [
   },
 ]
 
+const data_3 = [
+  {
+    id: "1",
+    label: "정답 - 삼각형",
+    value: 82,
+  },
+  {
+    id: "2",
+    label: "오답 - 구",
+    value: 44,
+  },
+  {
+    id: "3",
+    label: "오답 - 사각형",
+    value: 10,
+  },
+]
+
+const data_4 = [
+  {
+    id: "1",
+    label: "정답 - KARI",
+    value: 64,
+  },
+  {
+    id: "2",
+    label: "오답 - KAIST",
+    value: 38,
+  },
+  {
+    id: "3",
+    label: "오답 - ETRI",
+    value: 9,
+  },
+]
+
+const data_5 = [
+  {
+    id: "1",
+    label: "정답 - 액체연료",
+    value: 50,
+  },
+  {
+    id: "2",
+    label: "오답 - 고체연료",
+    value: 38,
+  },
+  {
+    id: "3",
+    label: "오답 - 기체연료",
+    value: 23,
+  },
+]
+
+const data_6 = [
+  {
+    id: "1",
+    label: "정답 - 티타늄",
+    value: 103,
+  },
+  {
+    id: "2",
+    label: "오답 - 다이아몬드",
+    value: 8,
+  },
+  {
+    id: "3",
+    label: "오답 - 은",
+    value: 3,
+  },
+]
+
 const QuizStats = () => {
   const [active, setActive] = React.useState(1)
   const getItemProps = index => ({
@@ -101,7 +173,7 @@ const QuizStats = () => {
   })
 
   const next = () => {
-    if (active === 3) return
+    if (active === 7) return
 
     setActive(active + 1)
   }
@@ -156,7 +228,7 @@ const QuizStats = () => {
                 <span class="text-blue-800">67.2%</span>
               </p>
             </div>
-            <div className="h-[200px]">
+            <div className="h-[240px]">
               <ResponsiveBar
                 data={data_quiz}
                 keys={["정답", "오답"]}
@@ -251,7 +323,7 @@ const QuizStats = () => {
         <Card className="mt-6 w-[680px]">
           <CardBody>
             <div className="flex justify-center">
-              <StaticImage className="w-[140px]" src="../images/gg.png" />
+              <StaticImage className="w-[140px]" src="../images/ggg.png" />
             </div>
             <Typography
               variant="h5"
@@ -315,7 +387,7 @@ const QuizStats = () => {
         <Card className="mt-6 w-[680px]">
           <CardBody>
             <div className="flex justify-center">
-              <StaticImage className="w-[140px]" src="../images/gg.png" />
+              <StaticImage className="w-[140px]" src="../images/ggg.png" />
             </div>
             <Typography
               variant="h5"
@@ -375,6 +447,262 @@ const QuizStats = () => {
             </div>
           </CardBody>
         </Card>
+      ) : active === 4 ? (
+        <Card className="mt-6 w-[680px]">
+          <CardBody>
+            <div className="flex justify-center">
+              <StaticImage className="w-[140px]" src="../images/ggg.png" />
+            </div>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="mb-4 mt-2 flex justify-center"
+            >
+              퀴즈 3. 꿈돌이의 귀 모양은??
+            </Typography>
+            <div className="mb-3 flex flex-col justify-center text-gray-800 text-sm">
+              <p className="self-center">
+                정답 <span class="text-blue-800">82회</span>, 오답{" "}
+                <span class="text-blue-800">54회</span>로 총 정답률{" "}
+                <span class="text-blue-800">60.3%</span>
+              </p>
+            </div>
+            <div className="h-[440px]">
+              <ResponsiveWaffle
+                data={data_3}
+                total={136}
+                rows={18}
+                columns={14}
+                padding={1}
+                margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
+                colors={{ scheme: "paired" }}
+                borderRadius={3}
+                borderColor={{
+                  from: "color",
+                  modifiers: [["darker", 0.3]],
+                }}
+                motionStagger={2}
+                legends={[
+                  {
+                    anchor: "top-left",
+                    direction: "column",
+                    justify: false,
+                    translateX: -100,
+                    translateY: 0,
+                    itemsSpacing: 4,
+                    itemWidth: 100,
+                    itemHeight: 20,
+                    itemDirection: "left-to-right",
+                    itemOpacity: 1,
+                    itemTextColor: "#777",
+                    symbolSize: 20,
+                    effects: [
+                      {
+                        on: "hover",
+                        style: {
+                          itemTextColor: "#000",
+                          itemBackground: "#f7fafb",
+                        },
+                      },
+                    ],
+                  },
+                ]}
+              />
+            </div>
+          </CardBody>
+        </Card>
+      ) : active === 5 ? (
+        <Card className="mt-6 w-[680px]">
+          <CardBody>
+            <div className="flex justify-center">
+              <StaticImage className="w-[140px]" src="../images/nuri.png" />
+            </div>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="mb-4 mt-2 flex justify-center"
+            >
+              퀴즈 4. 누리호를 만든 주관기관은?
+            </Typography>
+            <div className="mb-3 flex flex-col justify-center text-gray-800 text-sm">
+              <p className="self-center">
+                정답 <span class="text-blue-800">64회</span>, 오답{" "}
+                <span class="text-blue-800">47회</span>로 총 정답률{" "}
+                <span class="text-blue-800">57.7%</span>
+              </p>
+            </div>
+            <div className="h-[440px]">
+              <ResponsiveWaffle
+                data={data_4}
+                total={111}
+                rows={18}
+                columns={15}
+                padding={1}
+                margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
+                colors={{ scheme: "pastel2" }}
+                borderRadius={3}
+                borderColor={{
+                  from: "color",
+                  modifiers: [["darker", 0.3]],
+                }}
+                motionStagger={2}
+                legends={[
+                  {
+                    anchor: "top-left",
+                    direction: "column",
+                    justify: false,
+                    translateX: -100,
+                    translateY: 0,
+                    itemsSpacing: 4,
+                    itemWidth: 100,
+                    itemHeight: 20,
+                    itemDirection: "left-to-right",
+                    itemOpacity: 1,
+                    itemTextColor: "#777",
+                    symbolSize: 20,
+                    effects: [
+                      {
+                        on: "hover",
+                        style: {
+                          itemTextColor: "#000",
+                          itemBackground: "#f7fafb",
+                        },
+                      },
+                    ],
+                  },
+                ]}
+              />
+            </div>
+          </CardBody>
+        </Card>
+      ) : active === 6 ? (
+        <Card className="mt-6 w-[680px]">
+          <CardBody>
+            <div className="flex justify-center">
+              <StaticImage className="w-[140px]" src="../images/nuri.png" />
+            </div>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="mb-4 mt-2 flex justify-center"
+            >
+              퀴즈 5. 누리호가 사용한 연료의 종류는?
+            </Typography>
+            <div className="mb-3 flex flex-col justify-center text-gray-800 text-sm">
+              <p className="self-center">
+                정답 <span class="text-blue-800">50회</span>, 오답{" "}
+                <span class="text-blue-800">61회</span>로 총 정답률{" "}
+                <span class="text-blue-800">45.0%</span>
+              </p>
+            </div>
+            <div className="h-[440px]">
+              <ResponsiveWaffle
+                data={data_5}
+                total={111}
+                rows={18}
+                columns={15}
+                padding={1}
+                margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
+                colors={{ scheme: "pastel2" }}
+                borderRadius={3}
+                borderColor={{
+                  from: "color",
+                  modifiers: [["darker", 0.3]],
+                }}
+                motionStagger={2}
+                legends={[
+                  {
+                    anchor: "top-left",
+                    direction: "column",
+                    justify: false,
+                    translateX: -100,
+                    translateY: 0,
+                    itemsSpacing: 4,
+                    itemWidth: 100,
+                    itemHeight: 20,
+                    itemDirection: "left-to-right",
+                    itemOpacity: 1,
+                    itemTextColor: "#777",
+                    symbolSize: 20,
+                    effects: [
+                      {
+                        on: "hover",
+                        style: {
+                          itemTextColor: "#000",
+                          itemBackground: "#f7fafb",
+                        },
+                      },
+                    ],
+                  },
+                ]}
+              />
+            </div>
+          </CardBody>
+        </Card>
+      ) : active === 7 ? (
+        <Card className="mt-6 w-[680px]">
+          <CardBody>
+            <div className="flex justify-center">
+              <StaticImage className="w-[140px]" src="../images/nuri.png" />
+            </div>
+            <Typography
+              variant="h5"
+              color="blue-gray"
+              className="mb-4 mt-2 flex justify-center"
+            >
+              퀴즈 6. 누리호에 사용된 재료는?
+            </Typography>
+            <div className="mb-3 flex flex-col justify-center text-gray-800 text-sm">
+              <p className="self-center">
+                정답 <span class="text-blue-800">103회</span>, 오답{" "}
+                <span class="text-blue-800">11회</span>로 총 정답률{" "}
+                <span class="text-blue-800">90.4%</span>
+              </p>
+            </div>
+            <div className="h-[440px]">
+              <ResponsiveWaffle
+                data={data_6}
+                total={114}
+                rows={18}
+                columns={15}
+                padding={1}
+                margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
+                colors={{ scheme: "pastel2" }}
+                borderRadius={3}
+                borderColor={{
+                  from: "color",
+                  modifiers: [["darker", 0.3]],
+                }}
+                motionStagger={2}
+                legends={[
+                  {
+                    anchor: "top-left",
+                    direction: "column",
+                    justify: false,
+                    translateX: -100,
+                    translateY: 0,
+                    itemsSpacing: 4,
+                    itemWidth: 100,
+                    itemHeight: 20,
+                    itemDirection: "left-to-right",
+                    itemOpacity: 1,
+                    itemTextColor: "#777",
+                    symbolSize: 20,
+                    effects: [
+                      {
+                        on: "hover",
+                        style: {
+                          itemTextColor: "#000",
+                          itemBackground: "#f7fafb",
+                        },
+                      },
+                    ],
+                  },
+                ]}
+              />
+            </div>
+          </CardBody>
+        </Card>
       ) : null}
       <div className="mt-6">
         <ButtonGroup variant="outlined" color="blue-gray">
@@ -384,6 +712,10 @@ const QuizStats = () => {
           <IconButton {...getItemProps(1)}>1</IconButton>
           <IconButton {...getItemProps(2)}>2</IconButton>
           <IconButton {...getItemProps(3)}>3</IconButton>
+          <IconButton {...getItemProps(4)}>4</IconButton>
+          <IconButton {...getItemProps(5)}>5</IconButton>
+          <IconButton {...getItemProps(6)}>6</IconButton>
+          <IconButton {...getItemProps(7)}>7</IconButton>
           <IconButton onClick={next}>
             <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
           </IconButton>

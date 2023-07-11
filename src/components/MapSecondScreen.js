@@ -18,7 +18,6 @@ const MapSecondScreen = () => {
         <div className="flex flex-wrap flex-col">
           <Typography
             variant="h4"
-            color="blue-gray"
             className="justify-center flex"
           >
             디지털 트윈

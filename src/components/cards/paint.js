@@ -217,12 +217,6 @@ const Paint = () => {
         </Card>
         <Card className="w-40 bg-gray-50 min-w-fit mb-2 ml-1 mr-1">
           <CardHeader floated={false} className="h-32">
-            <StaticImage src="../../images/etc/image256.jpg" />
-          </CardHeader>
-          <CardBody className="-mb-8" />
-        </Card>
-        <Card className="w-40 bg-gray-50 min-w-fit mb-2 ml-1 mr-1">
-          <CardHeader floated={false} className="h-32">
             <StaticImage src="../../images/etc/image299.jpg" />
           </CardHeader>
           <CardBody className="-mb-8" />

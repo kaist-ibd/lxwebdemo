@@ -28,8 +28,7 @@
     "react-helmet": "^6.1.0",
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
-    "react-leaflet-marker": "^2.1.0",
-    "tw-elements": "^1.0.0-beta2"
+    "react-leaflet-marker": "^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

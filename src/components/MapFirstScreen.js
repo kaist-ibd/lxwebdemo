@@ -18,14 +18,13 @@ const MapFirstScreen = () => {
         <div className="flex flex-wrap flex-col">
           <Typography
             variant="h2"
-            color="blue-gray"
-            className="justify-center flex"
+            className="justify-center flex  text-gray-900"
           >
             대전 메타버스
           </Typography>
           <Typography
             variant="h5"
-            className="justify-center flex text-gray-800"
+            className="justify-center flex text-gray-700"
           >
             KAIST IBD & LX 공간정보연구원
           </Typography>
