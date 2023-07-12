@@ -17,8 +17,8 @@ import {
 
 const OverallStats = () => {
   return (
-    <div className="max-w-7xl mx-auto flex justify-center">
-      <Card className="mt-6 w-[480px]">
+    <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+      <Card className="w-[480px] mt-32">
         <CardBody>
           <Typography
             variant="h5"

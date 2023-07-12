@@ -4,13 +4,13 @@ import { Typography, Carousel, Button } from "@material-tailwind/react"
 
 const MainCarousel = () => (
   <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 xl:px-0 items-center">
-    <div className="flex justify-center pb-8 -pt-8">
+    <div className="flex justify-center pb-8 pt-12">
       <Button size="lg" className="cursor-default">
         <p className="text-xl">메타버스 갤러리</p>
       </Button>
     </div>
-    <div className="flex flex-wrap justify-center">
-      <figure className="relative h-full w-full">
+    <div className="flex flex-wrap justify-center ">
+      <figure className="relative h-full w-[1080px] mb-16">
         <Carousel loop={true}>
           <div className="relative">
             <StaticImage

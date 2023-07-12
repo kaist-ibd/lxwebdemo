@@ -15,7 +15,7 @@ const Data = [
 const EtcStats = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 xl:px-0">
-    <div className="flex justify-center pb-8 -pt-8">
+    <div className="flex justify-center pb-8 mt-16">
       <Button size="lg" className="cursor-default">
         <p className="text-xl">그외 통계</p>
       </Button>

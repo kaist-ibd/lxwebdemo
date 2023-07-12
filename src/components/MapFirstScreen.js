@@ -14,7 +14,7 @@ const MapFirstScreen = () => {
         </React.Suspense>
       )}
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center rounded-xl border-4 border-white bg-white/50 py-[48px] px-[64px] shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm z-[1000]">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 flex justify-center rounded-xl border-4 border-white bg-white/50 py-[48px] px-[64px] shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm z-[1000]">
         <div className="flex flex-wrap flex-col">
           <Typography
             variant="h2"

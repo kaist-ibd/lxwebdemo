@@ -14,7 +14,7 @@ const NPCStats = () => {
 
   return (
     <div className="max-w-7xl mx-auto flex justify-center items-center flex-col">
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-8">
         <Button size="lg" className="cursor-default">
           <p className="text-xl">상호작용 - NPC 통계</p>
         </Button>

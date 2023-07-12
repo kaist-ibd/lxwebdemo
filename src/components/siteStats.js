@@ -6,9 +6,6 @@ import {
   Typography,
   IconButton,
   ButtonGroup,
-  Popover,
-  PopoverHandler,
-  PopoverContent,
 } from "@material-tailwind/react"
 import { StaticImage } from "gatsby-plugin-image"
 import { ResponsivePie } from "@nivo/pie"
@@ -122,7 +119,7 @@ const SiteStats = () => {
   })
 
   const next = () => {
-    if (active === 4) return
+    if (active === 3) return
 
     setActive(active + 1)
   }
@@ -135,7 +132,7 @@ const SiteStats = () => {
 
   return (
     <div className="max-w-7xl mx-auto flex justify-center items-center flex-col">
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-16">
         <Button size="lg" className="cursor-default">
           <p className="text-xl">구역 관련 데이터 통계</p>
         </Button>
@@ -187,42 +184,6 @@ const SiteStats = () => {
           </div>
         </Card>
       ) : active === 2 ? (
-        <Card className="mt-6 w-[580px]">
-          <CardBody>
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="mb-4 mt-2 flex justify-center"
-            >
-              집중구역
-            </Typography>
-            <div className="flex justify-center">
-            <Popover>
-            <PopoverHandler>
-              <Button
-                variant="outlined"
-                className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
-              >
-                <p className="text-sm">지도 보기</p>
-              </Button>
-            </PopoverHandler>
-            <PopoverContent className="w-[400px] bg-transparent border-0">
-              <StaticImage
-                className="h-full w-full rounded-3xl"
-                src="../images/sites.png"
-              />
-            </PopoverContent>
-          </Popover>
-            </div>
-            <Typography className="mb-4 mt-2 flex justify-center text-gray-800 text-sm">
-              높은 세밀도의 집중구역 (LOD2-4)
-            </Typography>
-            <div className="h-[240px] mt-12">
-              그래프 radial
-            </div>
-          </CardBody>
-        </Card>
-      ) : active === 3 ? (
         <Card className="mt-6 w-[580px]">
           <CardBody>
             <Typography
@@ -328,7 +289,7 @@ const SiteStats = () => {
             </table>
           </CardBody>
         </Card>
-      ) : active === 4 ? (
+      ) : active === 3 ? (
         <Card className="mt-6 w-[580px]">
           <CardBody>
             <Typography
@@ -385,7 +346,6 @@ const SiteStats = () => {
           <IconButton {...getItemProps(1)}>1</IconButton>
           <IconButton {...getItemProps(2)}>2</IconButton>
           <IconButton {...getItemProps(3)}>3</IconButton>
-          <IconButton {...getItemProps(4)}>4</IconButton>
           <IconButton onClick={next}>
             <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
           </IconButton>

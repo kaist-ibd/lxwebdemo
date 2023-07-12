@@ -186,7 +186,7 @@ const QuizStats = () => {
 
   return (
     <div className="max-w-7xl mx-auto flex justify-center items-center flex-col">
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-8">
         <Button size="lg" className="cursor-default">
           <p className="text-xl">상호작용 - 퀴즈 통계</p>
         </Button>
@@ -197,16 +197,16 @@ const QuizStats = () => {
             <Typography
               variant="h5"
               color="blue-gray"
-              className="mb-4 mt-2 flex justify-center"
+              className="mb-4 mt-1 flex justify-center"
             >
               퀴즈 액티비티
             </Typography>
             <div className="flex flex-col justify-center">
               <StaticImage
-                className="w-[360px] rounded-3xl self-center"
+                className="w-[320px] rounded-3xl self-center"
                 src="../images/q.png"
               />
-              <Typography className="mb-8 mt-2 flex justify-center text-gray-800 text-sm">
+              <Typography className="mb-4 mt-2 flex justify-center text-gray-800 text-sm">
                 참여자가 대전에 대한 6가지 퀴즈를 풀어보는 액티비티
               </Typography>
             </div>
@@ -228,7 +228,7 @@ const QuizStats = () => {
                 <span class="text-blue-800">67.2%</span>
               </p>
             </div>
-            <div className="h-[240px]">
+            <div className="h-[220px]">
               <ResponsiveBar
                 data={data_quiz}
                 keys={["정답", "오답"]}
