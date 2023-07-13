@@ -40,7 +40,7 @@ const Layout = () => {
           ) : (
             <Typography
               as="a"
-              href="#2"
+              href="#1"
               className="mr-4 cursor-pointer font-bold"
             >
               대전 메타버스
@@ -75,7 +75,7 @@ const Layout = () => {
             ) : (
               <Typography
                 as="a"
-                href="#4"
+                href="#3"
                 className="mr-4 cursor-pointer font-medium"
               >
                 메타버스 갤러리
@@ -92,7 +92,7 @@ const Layout = () => {
             ) : (
               <Typography
                 as="a"
-                href="#2"
+                href="#4"
                 className="mr-4 cursor-pointer font-medium"
               >
                 데이터 현황

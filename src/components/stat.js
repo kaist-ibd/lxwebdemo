@@ -60,7 +60,7 @@ const CustomStatCard = ({ text, name, image, size }) => {
           </Button>
         </DialogFooter>
       </Dialog>
-      <Card className="mt-16 mb-10 ml-2 mr-2 w-96 cursor-pointer" onClick={handleOpen}>
+      <Card className="mt-4 mb-10 ml-2 mr-2 w-96 cursor-pointer" onClick={handleOpen}>
         <CardHeader color="blue-gray" className="relative h-56" floated={false}>
           <GatsbyImage image={img} layout="fixed" />
         </CardHeader>

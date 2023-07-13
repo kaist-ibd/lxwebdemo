@@ -6,6 +6,9 @@ import {
   Typography,
   IconButton,
   ButtonGroup,
+  Popover,
+  PopoverHandler,
+  PopoverContent,
 } from "@material-tailwind/react"
 import { StaticImage } from "gatsby-plugin-image"
 import { ResponsivePie } from "@nivo/pie"
@@ -139,6 +142,29 @@ const SiteStats = () => {
       </div>
       {active === 1 ? (
         <Card className="mt-6 w-[650px]">
+          <div className="self-center mt-4 mb-3">
+          <p >
+                전체 로그 중 <span class="text-blue-800">80.7%</span>의 로그가 집중 구역에서 수집
+              </p>
+          </div>
+          <div className="flex justify-center">
+            <Popover>
+              <PopoverHandler>
+                <Button
+                  variant="outlined"
+                  className="flex items-center gap-2 rounded-3xl whitespace-nowrap"
+                >
+                  <p className="text-sm">집중구역 지도</p>
+                </Button>
+              </PopoverHandler>
+              <PopoverContent className="w-[400px] bg-transparent border-0">
+                <StaticImage
+                  className="h-full w-full rounded-3xl"
+                  src="../images/sites.png"
+                />
+              </PopoverContent>
+            </Popover>
+          </div>
           <div class="h-[450px]">
             <ResponsiveRadar
               data={data_radar}
