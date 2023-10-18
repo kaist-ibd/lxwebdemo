@@ -11,6 +11,7 @@ module.exports = {
   // flags: {
   //   DEV_SSR: true
   // },
+  pathPrefix: "/lxwebdemo",
   siteMetadata: {
     title: `IBD x LX Daejeon Metaverse`,
     description: `Daejeon Metaverse`,
